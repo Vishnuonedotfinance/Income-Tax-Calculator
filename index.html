@@ -539,6 +539,8 @@
       }
 
       // Initialize
+      window.resetAll=resetAll;
+      window.renderReview=renderReview;
       showStep('step1');
       steps.forEach(si=>si.addEventListener('click',()=>showStep('step'+si.dataset.step)));
     });
